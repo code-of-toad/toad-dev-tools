@@ -1,6 +1,4 @@
 from manim import *
-
-
 """
 Uncomment the next 4 lines for vertical resolution.
 """
@@ -8,6 +6,7 @@ Uncomment the next 4 lines for vertical resolution.
 # config.pixel_height = 1920
 # config.frame_width  = 9.0
 # config.frame_height = 16.0
+
 
 class ToadTemplate(Scene):
     def construct(self):
