@@ -19,6 +19,8 @@ class ToadTemplate(Scene):
         self.camera.background_color = bg_color
         if grid:
             self.add(NumberPlane(
+                x_length=config.frame_width,
+                y_length=config.frame_height,
                 background_line_style={
                     "stroke_color": WHITE, "stroke_width": 1, "stroke_opacity": 0.1
                 },
