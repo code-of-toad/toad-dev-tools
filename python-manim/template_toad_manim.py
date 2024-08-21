@@ -11,13 +11,8 @@ Uncomment the next 4 lines for vertical resolution.
 class ToadScene(Scene):
     def play(self, *args, **kwargs):
         """
-        CUSTOM OVERRIDE
-        """
-        kwargs = self._apply_defaults(**kwargs)
-        super().play(*args, **kwargs)
-
-    def _apply_defaults(self, **kwargs):
-        """
+        CUSTOM OVERRIDE:
+        ----------------
         Applies default values for animation parameters if they are not explicitly provided.
         
         `self.play()` Parameter Defaults:
@@ -27,13 +22,13 @@ class ToadScene(Scene):
         rate_func: smooth  ->  {smooth, linear, rush_into, rush_from, there_and_back_with_pause}
         """
         defaults = { 
-            'run_time':  1.0,
+            'run_time':  0.3,
             'lag_ratio': 0.0,
             'rate_func': smooth,
         }
         for parameter, new_default in defaults.items():
             kwargs.setdefault(parameter, new_default)
-        return kwargs
+        super().play(*args, **kwargs)
 
 
 class ToadTemplate(ToadScene):
