@@ -1,6 +1,4 @@
-"""
-APPEND THE BELOW LINES TO THE END OF THE DEFAULT .bashrc FILE in the Home directory.
-"""
+# APPEND THE BELOW LINES TO THE END OF `.bashrc` in the Home directory.
 
 # CUSTOM USER SETTINGS
 # ====================
