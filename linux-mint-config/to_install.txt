@@ -33,6 +33,7 @@ cd /usr/share/doc/git/contrib/credential/libsecret
 sudo make
 git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
 
+# Install below BEFORE installing R Studio
 sudo apt install gcc
 sudo apt install g++
 sudo apt install gfortran
